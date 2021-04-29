@@ -28,13 +28,13 @@ const BlogPost = () => {
     <main className="gb-green-100 min-h-screen p-12">
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive"></h1>
-        <h2 className="text-lg text-grey-600 flex justify-center mb-12"></h2>
+        <h2 className="text-lg text-grey-600 flex justify-center mb-12">Welcome to the Blog!</h2>
         <div className="grid md:grid-cols-2 lg:grid:grid-cols-3 gap-8">
           {data &&
             data.map((post, index) => (
               <article>
                 <Link
-                  to={"/blogpost/" + post.slug.current}
+                  to={"/post/" + post.slug.current}
                   key={post.slug.current}
                 >
                   <span

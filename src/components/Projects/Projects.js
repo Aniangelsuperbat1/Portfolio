@@ -11,7 +11,7 @@ const Projects = () => {
             title,
             date,
             place,
-            decription,
+            description,
             projectType,
             link,
             tags,
@@ -22,7 +22,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <main className="bg-green-100 min-h-screen p-12">
+    <main className="bg-blue-100 min-h-screen p-12">
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive"></h1>My Projects
         <h2 className="text-lg text-grey-600 flex justify-center mb-12">Welcome to my projects page!</h2>
