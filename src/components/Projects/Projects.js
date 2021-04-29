@@ -10,6 +10,7 @@ const Projects = () => {
         `*[_type == "projects"] {
             title,
             date,
+            image,
             place,
             description,
             projectType,
@@ -24,8 +25,9 @@ const Projects = () => {
   return (
     <main className="bg-blue-100 min-h-screen p-12">
       <section className="container mx-auto">
-        <h1 className="text-5xl flex justify-center cursive"></h1>My Projects
-        <h2 className="text-lg text-grey-600 flex justify-center mb-12">Welcome to my projects page!</h2>
+        <h2 className="text-lg text-grey-600 flex justify-center mb-12">
+          Welcome to my projects page!
+        </h2>
         <section className="grid grid-cols-2 gap-8">
           {project &&
             project.map((project, index) => (
@@ -41,18 +43,6 @@ const Projects = () => {
                   </a>
                 </h3>
                 <div className="text-grey-500 text-xs space-x-4">
-                  <span>
-                    <strong className="font-bold">Finished on</strong>:{" "}
-                    {new Date(project.date).toLocaleDateString()}
-                  </span>
-                  <span>
-                    <strong className="font-bold">Company</strong>:{" "}
-                    {project.place}
-                  </span>
-                  <span>
-                    <strong className="font-bold">Type</strong>{" "}
-                    {project.projectType}
-                  </span>
                   <p className="my-6 text-lg text-grey-700 leading-relaxed">
                     {project.description}
                   </p>
@@ -62,7 +52,7 @@ const Projects = () => {
                     target="_blank"
                     className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl"
                   >
-                    View the Project{" "}
+                    View this Project{" "}
                     <span role="img" aria-label="right pointer">
                       👍
                     </span>
