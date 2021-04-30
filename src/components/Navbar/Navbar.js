@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import {SocialIcon} from "react-social-icons";
 
-const Navbar = () => {
+const NavBar = () => {
   return (
     <header className="bg-red-600">
       <div className="container mx-auto flex justify-between">
@@ -65,4 +65,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
