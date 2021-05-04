@@ -42,7 +42,7 @@ const About = () => {
               Hello. I am{" "}
               <span className="text-green-100">{about.name}</span>
             </h1>
-            <div className="prose lg:prose-xl text-white">
+            <div className="prose lg:prose-xl text-green">
               <BlockContent
                 blocks={about.bio}
                 projectId="9l1mb7ik"
