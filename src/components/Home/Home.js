@@ -14,8 +14,9 @@ const home = () => {
         <h1 className="text-6xl text-green-100 font-bold cursive">
           <ReactTypingEffect
             text={[
-              "Hello, welcome to my page! My name is Patrick, I am a software engineer by day and a coding addict by night! Please feel free to check out my projects! and thank you for stopping by!"
+              "Hello, welcome to my page! My name is Patrick, I am a software engineer by day and a coding addict by night! Please feel free to check out my projects! and thank you for stopping by!",
             ]}
+            typingDelay={1000}
             eraseSpeed={100}
             speed={80}
             eraseDelay={100000}
