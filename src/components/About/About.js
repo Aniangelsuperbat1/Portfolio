@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import sanityClient from "../../connect.js";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
+// import image from "./man.jpg"
 
 const About = () => {
   const [about, setabout] = useState(null);
@@ -30,7 +31,7 @@ const About = () => {
     <main className="relative">
       {/* <img src={image} alt="" className="absolute w-full" /> */}
       <div className="p-10 lg:pt-48 container mx-auto relative">
-        <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
+        <section className="bg-blue-800 rounded-lg shadow-2xl lg:flex p-20">
           <img
             src={urlFor(about.authorImage).url()}
             alt=""
